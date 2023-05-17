@@ -1,0 +1,76 @@
+argon2-cffi==21.3.0
+argon2-cffi-bindings==21.2.0
+arrow==1.2.3
+asgiref==3.6.0
+bcrypt==4.0.1
+certifi==2023.5.7
+cffi==1.15.1
+charset-normalizer==3.1.0
+cryptography==40.0.2
+Django==4.2.1
+django-audit-fields==0.3.9
+django-cors-headers==4.0.0
+django-crypto-fields @ git+https://github.com/botswana-harvard/django-crypto-fields.git@f975c27f7ea69ca274976a3868c34f2d8983d550
+django-debug-toolbar==4.1.0
+django-extensions==3.2.1
+django-ipware==5.0.0
+django-js-reverse==0.9.1
+django-logentry-admin==1.1.0
+django-revision @ git+https://github.com/botswana-harvard/django-revision.git@38e3c9f8c07de4977fdd8f73166562253a9ac281
+django-simple-history==3.3.0
+djangorestframework==3.14.0
+docutils==0.20
+edc-action-item @ git+https://github.com/botswana-harvard/edc-action-item.git@022e2a98a76a8c0f506733e8e196667331e77a5b
+edc-appointment @ git+https://github.com/botswana-harvard/edc-appointment.git@5c8a64f53b54db7a057a296c769d4e69f3400a3b
+edc-base @ git+https://github.com/botswana-harvard/edc-base.git@08a64f9aa1a17809f8c3bcc6e1ccdb247cdd9880
+edc-consent @ git+https://github.com/botswana-harvard/edc-consent.git@90b71fd80bc9191268d32215b0d20230eb845ddd
+edc-constants @ git+https://github.com/botswana-harvard/edc-constants.git@70b03cc3c135f242de543123b3c7c9dfce284e67
+edc-dashboard @ git+https://github.com/botswana-harvard/edc-dashboard.git@907705228b05bf399256140686eb9c78fd54d54d
+edc-device @ git+https://github.com/botswana-harvard/edc-device.git@867751966a4449ffd17719aad11bba6be2a52800
+edc-facility @ git+https://github.com/botswana-harvard/edc-facility.git@3cd82c74b28ec22d16c4d627eff1aaf311af4287
+edc-form-validators @ git+https://github.com/botswana-harvard/edc-form-validators.git@17e6eaf4cbef1b80ec76721f905a9d76a66d9fe9
+edc-identifier @ git+https://github.com/botswana-harvard/edc-identifier.git@c849cdb598d87082ab2008d7855bd1710e7023de
+edc-lab @ git+https://github.com/botswana-harvard/edc-lab.git@6cfecbc2032d00b4cb4cfd27a2550d3d0dd7524d
+edc-label @ git+https://github.com/botswana-harvard/edc-label.git@8fe927071ac87507f5d85603cef6c4bbd8a508f9
+edc-list-data @ git+https://github.com/botswana-harvard/edc-list-data.git@3e91635b3d6cc3e9e9b7b8bb1731c7b19db43d0f
+edc-locator @ git+https://github.com/botswana-harvard/edc-locator.git@607caa33dbd1ae445a45bc387a0ce1421bddd414
+edc-metadata @ git+https://github.com/botswana-harvard/edc-metadata.git@cc0cf2e47d7ba5d074423a49c910682e33503318
+edc-model-admin @ git+https://github.com/botswana-harvard/edc-model-admin.git@18da70d85b1bf921fa50f48d432bb4b8ab2523b4
+edc-model-wrapper @ git+https://github.com/botswana-harvard/edc-model-wrapper.git@814b9f85feceed246e378425ab6add8bba3b655f
+edc-prn @ git+https://github.com/botswana-harvard/edc-prn.git@ff7d32cdfafc4ee225602931860c38c268148ae3
+edc-protocol @ git+https://github.com/botswana-harvard/edc-protocol.git@eb9bce9c4e832543c9171d1fabacd25b5db25f90
+edc-reference @ git+https://github.com/botswana-harvard/edc-reference.git@cf77d5877476342830366e91a3fe6cfd4758945e
+edc-registration @ git+https://github.com/botswana-harvard/edc-registration.git@3c44c67996e21d1c79c41b54befb44d6deba67ac
+edc-sms @ git+https://github.com/botswana-harvard/edc-sms.git@488e609263bbccbeaa85da7a3adf49132304d323
+edc-subject-dashboard @ git+https://github.com/botswana-harvard/edc-subject-dashboard.git@2933ac9ce87f7a9dd5698f5e6cead12d0205aad8
+edc-sync @ git+https://github.com/botswana-harvard/edc-sync@eb2698d908c8d5307f13758b459c60eb18f16be9
+edc-sync-files @ git+https://github.com/botswana-harvard/edc-sync-files@f7bc359ecf7b6dd0689c83e900b0d7cef63f6f6b
+edc-timepoint @ git+https://github.com/botswana-harvard/edc-timepoint.git@2231996b42606a422ef4763c3ab388cddf38abbe
+edc-utils==0.3.19
+edc-visit-schedule @ git+https://github.com/botswana-harvard/edc-visit-schedule.git@71588bc1e9f1e5218ab524940b11c4ec406fee9f
+edc-visit-tracking @ git+https://github.com/botswana-harvard/edc-visit-tracking.git@61f7ccd1ce3f4b078a389b844029ef1263469ec2
+Faker==18.7.0
+gitdb==4.0.10
+GitPython==3.1.31
+hurry.filesize==0.9
+idna==3.4
+model-mommy==2.0.0
+paramiko==3.1.0
+pycparser==2.21
+pycryptodome==3.17
+pycups==2.0.1
+PyMySQL==1.0.3
+PyNaCl==1.5.0
+python-dateutil==2.8.2
+python-memcached==1.59
+pytz==2023.3
+requests==2.30.0
+six==1.16.0
+smmap==5.0.0
+sqlparse==0.4.4
+toolz==0.12.0
+tqdm==4.65.0
+-e git+https://github.com/Keba462/trainee-subject.git@ed3673fd8e41462eb271800d1cb6428b2d46aba7#egg=trainee_subject
+-e git+https://github.com/Keba462/trainee-visit-schedule.git@f7957562eaca9a6df85a210a12d67ae921faa94f#egg=trainee_visit_schedule
+urllib3==2.0.2
+watchdog==3.0.0

@@ -35,6 +35,7 @@ sys.stdout.write(style.SUCCESS(f'  * Reading config from {CONFIG_FILE}\n'))
 config = configparser.ConfigParser()
 config.read(CONFIG_PATH)
 
+#KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
 
 # EDC SMS configuration
 BASE_API_URL = config['edc_sms']['base_api_url']
@@ -62,6 +63,31 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
+    'rest_framework.authtoken',
+    'django_crypto_fields.apps.AppConfig',
+    'edc_action_item.apps.AppConfig',
+    'edc_sync.apps.AppConfig',
+    'edc_sync_files.apps.AppConfig',
+    'edc_base.apps.AppConfig',
+    'edc_consent.apps.AppConfig',
+    'edc_device.apps.AppConfig',
+    'edc_lab.apps.AppConfig',
+    'edc_senaite_interface.apps.AppConfig',
+    'edc_identifier.apps.AppConfig',
+    'edc_locator.apps.AppConfig',
+    'edc_timepoint.apps.AppConfig',
+    'edc_prn.apps.AppConfig',
+    'edc_protocol.apps.AppConfig',
+    'edc_registration.apps.AppConfig',
+    'edc_visit_schedule.apps.AppConfig',
+    'trainee_subject.apps.AppConfig',
+    'trainee_visit_schedule.apps.AppConfig',
+    'trainee_prn.apps.EdcFacilityAppConfig',
+    'trainee_prn.apps.EdcAppointmentAppConfig',
+    'trainee_prn.apps.EdcVisitTrackingAppConfig',
+    'trainee_prn.apps.EdcSmsAppConfig',
+    'trainee_prn.apps.AppConfig',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +98,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'edc_subject_dashboard.middleware.DashboardMiddleware',
+    'edc_dashboard.middleware.DashboardMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware',
 ]
 
 ROOT_URLCONF = 'trainee_prn.urls'
@@ -124,6 +153,20 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+EDC_SYNC_SERVER_IP = None
+EDC_SYNC_FILES_REMOTE_HOST = None
+EDC_SYNC_FILES_USER = None
+EDC_SYNC_FILES_USB_VOLUME = None
+
+SITE_ID = 2
+
+DEFAULT_STUDY_SITE = ''
+
+DEVICE_ID = '22' 
+DEVICE_ROLE = ''
+
+HOLIDAY_FILE = os.path.join(BASE_DIR, 'holidays.csv')
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
@@ -137,6 +180,14 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+COUNTRY = 'botswana'
+
+DASHBOARD_URL_NAMES = {
+    'subject_listboard_url': 'trainee_dashboard:subject_listboard_url',
+    'screening_listboard_url': 'trainee_dashboard:screening_listboard_url',
+    'subject_dashboard_url': 'trainee_dashboard:subject_dashboard_url',
+}
 
 
 # Static files (CSS, JavaScript, Images)
