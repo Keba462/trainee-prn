@@ -24,6 +24,8 @@ trainee_prn/form_validators/subject_offstudy_validator.py
 trainee_prn/forms/__init__.py
 trainee_prn/forms/death_report_form.py
 trainee_prn/forms/subject_offstudy_form.py
+trainee_prn/migrations/0001_initial.py
+trainee_prn/migrations/__init__.py
 trainee_prn/models/__init__.py
 trainee_prn/models/death_report.py
 trainee_prn/models/signals.py
